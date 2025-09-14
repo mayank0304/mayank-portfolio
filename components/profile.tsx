@@ -11,7 +11,7 @@ const Profile = () => {
   return (
     <>
       <div className="hidden xl:block">
-        <div className="bg-[#0D1117] text-white max-w-sm mx-auto rounded-3xl shadow-lg overflow-hidden">
+        <div className="bg-gradient-to-br from-[#0D1117] to-[#1a1f29] text-white max-w-sm mx-auto rounded-3xl shadow-lg backdrop-blur-md border border-white/10">
           {/* Profile Section */}
           <div className="p-8 flex flex-col justify-center items-center">
             {/* Avatar */}
@@ -121,13 +121,13 @@ const Profile = () => {
             {/* Right: Button */}
             <button
               onClick={() => setOpen(!open)}
-              className="absolute top-0 right-0 px-4 py-1.5 bg-[#1a1f29] rounded-tr-xl rounded-bl-xl text-[#E0FA51] hidden sm:block"
+              className="absolute top-0 right-0 px-4 py-1.5 bg-[#1a1f29] rounded-tr-xl rounded-bl-xl text-[#E0FA51] border border-[#E0FA51] hidden sm:block"
             >
               {open ? "Hide Contacts" : "Show Contacts"}
             </button>
             <button
               onClick={() => setOpen(!open)}
-              className="absolute top-0 right-0 px-4 py-1.5 bg-[#1a1f29] rounded-tr-xl rounded-bl-xl text-[#E0FA51] block sm:hidden"
+              className="absolute top-0 right-0 px-3 py-1 bg-[#1a1f29] rounded-tr-xl rounded-bl-xl text-[#E0FA51] border border-[#E0FA51] block sm:hidden"
             >
               {open ? <ChevronDown /> : <ChevronUp />}
             </button>
