@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  Calendar,
-  MapPin,
-} from "lucide-react";
+import { Calendar, Cpu, GraduationCap, MapPin } from "lucide-react";
 
 const ResumeTab = () => {
   return (
@@ -15,16 +12,16 @@ const ResumeTab = () => {
 
       <div className="mb-10">
         <h2 className="text-2xl font-semibold mb-6 text-white flex items-center gap-2">
-          <div className="w-8 h-8 bg-[#E0FA51]/20 rounded-lg flex items-center justify-center">
-            <Calendar size={16} className="text-[#E0FA51]" />
+          <div className="w-10 h-10 bg-[#1a1f29] rounded-lg flex items-center justify-center">
+            <Calendar size={24} className="text-[#E0FA51]" />
           </div>
           Experience
         </h2>
 
-        <div className="space-y-8">
-          <div className="relative pl-8 pb-8">
+        <div className="">
+          <div className="relative">
             {/* <div className="absolute w-4 h-4 bg-[#E0FA51] rounded-full -left-2 top-0"></div> */}
-            <div className="bg-[#1a1f29]/50 p-6 rounded-xl border border-white/10">
+            <div className="p-1">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                 <h3 className="text-xl font-semibold text-white">
                   Software Engineer Intern
@@ -39,7 +36,7 @@ const ResumeTab = () => {
                   Auribises Technologies Private Limited
                 </span>
               </div>
-              <ul className="text-gray-300 space-y-2 text-sm">
+              <ul className="text-gray-300 space-y-2 text-sm px-2">
                 <li>
                   • Developed a cross-platform mobile application using Flutter
                   with modular architecture and Material Design, meeting client
@@ -65,9 +62,61 @@ const ResumeTab = () => {
           </div>
         </div>
       </div>
-      
 
-    
+      <div className="mb-10">
+        <h2 className="text-2xl font-semibold mb-6 text-white flex items-center gap-2">
+          <div className="w-10 h-10 bg-[#1a1f29] rounded-lg flex items-center justify-center">
+            <GraduationCap size={28} className="text-[#E0FA51]" />
+          </div>
+          Education
+        </h2>
+
+        <div className="">
+          <div className="">
+            {/* <div className="absolute w-4 h-4 bg-[#E0FA51] rounded-full -left-2 top-0"></div> */}
+            <div className="px-6">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                <h3 className="text-xl font-semibold text-white">
+                  B.Tech In Information Technology
+                </h3>
+                <span className="text-[#E0FA51] text-sm font-medium">
+                  2022 - Present
+                </span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-400 mb-5">
+                <MapPin size={14} />
+                <span className="text-sm">
+                  Guru Nanak Dev Engineering College, Ludhiana
+                </span>
+              </div>
+
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                <h3 className="text-xl font-semibold text-white">
+                  High School In C.B.S.E.
+                </h3>
+                <span className="text-[#E0FA51] text-sm font-medium">
+                  2011 - 2022
+                </span>
+              </div>
+              <div className="flex items-center gap-2 text-gray-400">
+                <MapPin size={14} />
+                <span className="text-sm">
+                  Guru Nanak Model Sr. Sec. School, Doraha
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-10">
+        <h2 className="text-2xl font-semibold mb-6 text-white flex items-center gap-2">
+          <div className="w-10 h-10 bg-[#1a1f29] rounded-lg flex items-center justify-center">
+            <Cpu size={28} className="text-[#E0FA51]" />
+          </div>
+          Technical Skills
+        </h2>
+      </div>
     </div>
   );
 };

@@ -11,17 +11,16 @@ const Profile = () => {
   return (
     <>
       <div className="hidden xl:block">
-        <div className="bg-gradient-to-br from-[#0D1117] to-[#1a1f29] text-white max-w-sm mx-auto rounded-3xl shadow-lg backdrop-blur-md border border-white/10">
+        <div className="bg-[#0D1117]/80 text-white max-w-sm mx-auto rounded-3xl shadow-lg backdrop-blur-md border border-white/10">
           {/* Profile Section */}
           <div className="p-8 flex flex-col justify-center items-center">
             {/* Avatar */}
-            <div className="relative mb-6">
+            <div className="relative bg-tabbarMobile/90  rounded-3xl mb-6">
               <Image
-                src="/mjonir.jpg"
+                src="/avatar.png"
                 alt="Profile"
-                width={120}
+                width={170}
                 height={120}
-                className="rounded-2xl"
               />
             </div>
 
@@ -98,15 +97,15 @@ const Profile = () => {
         </div>
       </div>
       <div className="block xl:hidden">
-        <div className="bg-gradient-to-r from-[#0D1117]/80 to-[#1a1f29]/80 text-white w-full rounded-2xl shadow-lg backdrop-blur-md border border-white/10">
+        <div className="bg-[#0D1117]/80 text-white w-full rounded-2xl shadow-lg backdrop-blur-md border border-white/10">
           {/* Header Section */}
           <div className="relative flex items-center justify-between px-6 py-4">
             {/* Left: Avatar + Info */}
             <div className="flex items-center gap-5">
               <Image
-                src="/mjonir.jpg"
+                src="/avatar.png"
                 alt="Profile"
-                width={70}
+                width={90}
                 height={70}
                 className="rounded-2xl"
               />
