@@ -1,5 +1,11 @@
 import React from "react";
 import { Calendar, Cpu, GraduationCap, MapPin } from "lucide-react";
+import {
+  Marquee,
+  MarqueeContent,
+  MarqueeFade,
+  MarqueeItem,
+} from "../ui/shadcn-io/marquee";
 
 const ResumeTab = () => {
   return (
@@ -116,6 +122,44 @@ const ResumeTab = () => {
           </div>
           Technical Skills
         </h2>
+        <Marquee>
+            <MarqueeFade side="left" />
+            <MarqueeFade side="right" />
+            <MarqueeContent>
+              {[
+                { src: "/skills/dart.svg", name: "Dart" },
+                { src: "/skills/java.svg", name: "Java" },
+                { src: "/skills/javascript.svg", name: "JavaScript" },
+                { src: "/skills/typescript.svg", name: "TypeScript" },
+                { src: "/skills/firebase.svg", name: "Firebase" },
+                { src: "/skills/github.svg", name: "Github" },
+                { src: "/skills/docker.svg", name: "Docker" },
+                { src: "/skills/mongodb.svg", name: "Mongo DB" },
+                { src: "/skills/mysql.svg", name: "MySQL" },
+                { src: "/skills/postgresql.svg", name: "PostgreSQL" },
+                { src: "/skills/git.svg", name: "Git" },
+                { src: "/skills/html.svg", name: "HTML" },
+                { src: "/skills/css.svg", name: "CSS" },
+              ].map((skill, index) => (
+                <MarqueeItem
+                  key={index}
+                  className="relative h-32 w-32 flex items-center justify-center group"
+                >
+                  {/* Skill Icon */}
+                  <img
+                    alt={skill.name}
+                    className="h-20 w-20 transition duration-300 group-hover:blur-sm"
+                    src={skill.src}
+                  />
+
+                  {/* Overlay Text */}
+                  <span className="absolute text-lg font-semibold text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                    {skill.name}
+                  </span>
+                </MarqueeItem>
+              ))}
+            </MarqueeContent>
+          </Marquee>
       </div>
     </div>
   );
