@@ -14,8 +14,8 @@ export const ROUTES: Array<RouteInterface> = [
     label: "Projects",
   },
   {
-    path: "/interests",
-    label: "Interests",
+    path: "/achievments",
+    label: "Achievments",
   },
   {
     path: "/contact",
