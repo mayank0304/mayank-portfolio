@@ -12,8 +12,7 @@ const InterestsTab = () => {
       {/* Introduction */}
       <div className="mb-8">
         <p className="text-gray-300 leading-relaxed text-lg">
-          Beyond coding, I&apos;m passionate about exploring new technologies, creative pursuits, and adventures.
-          Here&apos;s what keeps me inspired and motivated outside of work.
+          Coming Soon...
         </p>
       </div>
 

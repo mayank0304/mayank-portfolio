@@ -15,38 +15,34 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "../ui/carousel";
-import { Card, CardContent } from "../ui/card";
 
-export function SkillstackProject({ children }: { children: React.ReactNode }) {
+export function AchieveProject({ children }: { children: React.ReactNode }) {
   const project = {
-    title: "Skillstack AI",
+    title: "Achieve IT",
     description:
-      "An AI-powered ed-tech platform built with React Native, featuring an intelligent study assistant, quiz generator, and smooth infinite scroll. Integrated with a Next.js backend and RESTful APIs for real-time data sync, the app was tested with students and achieved an 87% satisfaction rate for its intuitive design and seamless navigation.",
+      "AchieveIt is a modern, intuitive task and project management application built with React Native and Expo. The app helps users organize their tasks and projects efficiently while providing a sleek, user-friendly interface with a beautiful dark theme design.",
     techStack: [
       "React Native",
       "Expo",
-      "Zustand",
-      "Next.Js",
-      "Restful APIs",
-      "Better Auth",
+      "Expo-Notification",
+      "Async Storage"
     ],
-    image: "/skillstack.png",
+    image: "/achieve.png",
     demoUrl:
-      "https://github.com/mayank0304/skillstack-ai-apk/releases/tag/v1.0.0-Skillstack-AI",
+      "https://github.com/mayank0304/AchieveIt/releases/tag/v1.0.0-AchieveIt",
     githubUrl: "#",
-    status: "In Progress",
-    date: "Jan 2025 - Present",
+    status: "Completed",
+    date: "July 2025",
   };
 
   const pic = [
-    "/skillstack/skillstack1.jpg",
-    "/skillstack/skillstack2.jpg",
-    "/skillstack/skillstack3.jpg",
-    "/skillstack/skillstack4.jpg",
-    "/skillstack/skillstack5.jpg",
+    "/achieve/a1.jpg",
+    "/achieve/a2.jpg",
+    "/achieve/a3.jpg",
+    "/achieve/a4.jpg",
+    "/achieve/a5.jpg",
+    "/achieve/a6.jpg",
   ];
 
   return (

@@ -101,7 +101,7 @@ const Profile = () => {
           {/* Header Section */}
           <div className="relative flex items-center justify-between px-6 py-4">
             {/* Left: Avatar + Info */}
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-10">
               <Image
                 src="/avatar.png"
                 alt="Profile"
@@ -109,8 +109,8 @@ const Profile = () => {
                 height={70}
                 className="rounded-2xl"
               />
-              <div className="flex flex-col">
-                <div className="text-lg font-semibold">Mayank</div>
+              <div className="flex flex-col space-y-4">
+                <div className="text-lg font-semibold sm:text-3xl">Mayank</div>
                 <div className="bg-[#1a1f29] py-1 px-3 rounded-lg text-xs mt-2">
                   Software Developer
                 </div>
@@ -120,7 +120,7 @@ const Profile = () => {
             {/* Right: Button */}
             <button
               onClick={() => setOpen(!open)}
-              className="absolute top-0 right-0 px-4 py-1.5 bg-[#1a1f29] rounded-tr-xl rounded-bl-xl text-[#E0FA51] border border-[#E0FA51] hidden sm:block"
+              className="absolute top-0 right-0 px-4 py-1.5 bg-[#1a1f29] rounded-tr-xl rounded-bl-xl text-[#E0FA51] border border-white/20 hidden sm:block"
             >
               {open ? "Hide Contacts" : "Show Contacts"}
             </button>

@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col-reverse m-5 mb-16 gap-5 xl:flex-row-reverse xl:my-20 xl:mx-52 xl:gap-7">
+        <div className="flex flex-col-reverse m-5 mb-16 gap-5 sm:my-20 sm:mx-12 xl:flex-row-reverse xl:my-20 xl:mx-12 xl:gap-7 2xl:flex-row-reverse 2xl:my-20 2xl:mx-52 2xl:gap-7">
           <div className="bg-[#0D1117]/80 text-white w-full xl:w-[80%]  rounded-2xl shadow-lg backdrop-blur-md border border-white/10">
             <Tabbar />
             <div className="tab-content">{children}</div>

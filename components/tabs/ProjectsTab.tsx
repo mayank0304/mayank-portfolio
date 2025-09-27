@@ -2,6 +2,8 @@ import React from "react";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { SkillstackProject } from "../projectDialogs/skillstack";
+import { SpocoProject } from "../projectDialogs/spoco";
+import { AchieveProject } from "../projectDialogs/achieve";
 
 const ProjectsTab = () => {
   // const projects = [
@@ -89,6 +91,7 @@ const ProjectsTab = () => {
           </div>
         </div>
         <div className="p-3 mb-3">
+          <SpocoProject>
           <Image
             src="/spoco.png"
             width={460}
@@ -96,16 +99,19 @@ const ProjectsTab = () => {
             alt="Skillstack"
             className="rounded-xl"
           />
+          </SpocoProject>
           <div className="text-xl text-center mt-2 font-bold">Spoco</div>
         </div>
         <div className="p-3 mb-3">
-          <Image
+          <AchieveProject>
+            <Image
             src="/achieve.png"
             width={460}
             height={260}
             alt="Skillstack"
             className="rounded-xl"
           />
+          </AchieveProject>
           <div className="text-xl text-center mt-2 font-bold">Achieve IT</div>
         </div>
       </div>

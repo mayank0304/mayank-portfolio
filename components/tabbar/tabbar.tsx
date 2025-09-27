@@ -15,7 +15,7 @@ const Tabbar = () => {
 
   return (
     <>
-      <div className="bg-tabbarMobile/90 hidden md:flex flex-row max-w-lg rounded-bl-2xl rounded-tr-2xl p-3 px-10 absolute top-0 right-0">
+      <div className="hidden lg:flex flex-row items-center p-1.5 px-7 pl-8 space-x-4 bg-tabbarMobile/20 backdrop-blur-lg border border-white/10 rounded-bl-2xl rounded-tr-2xl absolute top-0 right-0">
         {ROUTES.map((route, idx) => {
           const isActive = isRouteActive(route.path);
 

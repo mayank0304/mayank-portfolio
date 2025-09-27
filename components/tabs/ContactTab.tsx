@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 
 const ContactTab = () => {
@@ -14,6 +13,13 @@ const ContactTab = () => {
 
       {/* Introduction */}
       <div className="mb-8">
+        <p className="text-gray-300 leading-relaxed text-lg">
+          Coming Soon...
+        </p>
+      </div>
+
+      {/* Introduction */}
+      {/* <div className="mb-8">
         <div className="flex flex-row">
           <div className="mx-5">
             <Image
@@ -30,7 +36,7 @@ const ContactTab = () => {
             </p>
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

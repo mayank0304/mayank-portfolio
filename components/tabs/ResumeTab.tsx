@@ -115,7 +115,7 @@ const ResumeTab = () => {
         </div>
       </div>
 
-      <div className="mb-10">
+      {/* <div className="mb-10">
         <h2 className="text-2xl font-semibold mb-6 text-white flex items-center gap-2">
           <div className="w-10 h-10 bg-[#1a1f29] rounded-lg flex items-center justify-center">
             <Cpu size={28} className="text-[#E0FA51]" />
@@ -145,14 +145,12 @@ const ResumeTab = () => {
                   key={index}
                   className="relative h-32 w-32 flex items-center justify-center group"
                 >
-                  {/* Skill Icon */}
                   <img
                     alt={skill.name}
                     className="h-20 w-20 transition duration-300 group-hover:blur-sm"
                     src={skill.src}
                   />
 
-                  {/* Overlay Text */}
                   <span className="absolute text-lg font-semibold text-white opacity-0 group-hover:opacity-100 transition duration-300">
                     {skill.name}
                   </span>
@@ -160,7 +158,7 @@ const ResumeTab = () => {
               ))}
             </MarqueeContent>
           </Marquee>
-      </div>
+      </div> */}
     </div>
   );
 };

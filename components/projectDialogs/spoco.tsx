@@ -15,38 +15,33 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "../ui/carousel";
-import { Card, CardContent } from "../ui/card";
 
-export function SkillstackProject({ children }: { children: React.ReactNode }) {
+export function SpocoProject({ children }: { children: React.ReactNode }) {
   const project = {
-    title: "Skillstack AI",
+    title: "Spoco",
     description:
-      "An AI-powered ed-tech platform built with React Native, featuring an intelligent study assistant, quiz generator, and smooth infinite scroll. Integrated with a Next.js backend and RESTful APIs for real-time data sync, the app was tested with students and achieved an 87% satisfaction rate for its intuitive design and seamless navigation.",
+      "A sports venue booking app built with Flutter and Firebase, enabling users to discover facilities and make real-time reservations. Optimized with Provider state management for faster data updates, the app also includes club and event modules with member management, group chat, secure authentication, and live data synchronization.",
     techStack: [
-      "React Native",
-      "Expo",
-      "Zustand",
-      "Next.Js",
-      "Restful APIs",
-      "Better Auth",
+      "Flutter",
+      "Firebase",
+      "Dart"
     ],
-    image: "/skillstack.png",
+    image: "/spoco.png",
     demoUrl:
-      "https://github.com/mayank0304/skillstack-ai-apk/releases/tag/v1.0.0-Skillstack-AI",
+      "https://play.google.com/store/apps/details?id=com.auribises.spoco",
     githubUrl: "#",
-    status: "In Progress",
-    date: "Jan 2025 - Present",
+    status: "Completed",
+    date: "August 2024 - November 2024",
   };
 
   const pic = [
-    "/skillstack/skillstack1.jpg",
-    "/skillstack/skillstack2.jpg",
-    "/skillstack/skillstack3.jpg",
-    "/skillstack/skillstack4.jpg",
-    "/skillstack/skillstack5.jpg",
+    "/spoco/spoco1.jpg",
+    "/spoco/spoco2.jpg",
+    "/spoco/spoco3.jpg",
+    "/spoco/spoco4.jpg",
+    "/spoco/spoco5.jpg",
+    "/spoco/spoco6.jpg",
   ];
 
   return (
