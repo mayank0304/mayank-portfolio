@@ -4,68 +4,9 @@ import Image from "next/image";
 import { SkillstackProject } from "../projectDialogs/skillstack";
 import { SpocoProject } from "../projectDialogs/spoco";
 import { AchieveProject } from "../projectDialogs/achieve";
+import { InventoryProject } from "../projectDialogs/inventory";
 
 const ProjectsTab = () => {
-  // const projects = [
-  //   {
-  //     id: 1,
-  //     title: "Skillstack AI",
-  //     description:
-  //       "An AI-powered ed-tech platform built with React Native, featuring an intelligent study assistant, quiz generator, and smooth infinite scroll. Integrated with a Next.js backend and RESTful APIs for real-time data sync, the app was tested with students and achieved an 87% satisfaction rate for its intuitive design and seamless navigation.",
-  //     techStack: [
-  //       "React Native",
-  //       "Expo",
-  //       "Zustand",
-  //       "Next.Js",
-  //       "Restful APIs",
-  //       "Better Auth",
-  //     ],
-  //     image: "🛒",
-  //     demoUrl:
-  //       "https://github.com/mayank0304/skillstack-ai-apk/releases/tag/v1.0.0-Skillstack-AI",
-  //     githubUrl: "#",
-  //     status: "In Progress",
-  //     date: "Jan 2025 - Present",
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Inventory",
-  //     description:
-  //       "An AI-powered ed-tech platform built with React Native, featuring an intelligent study assistant, quiz generator, and smooth infinite scroll. Integrated with a Next.js backend and RESTful APIs for real-time data sync, the app was tested with students and achieved an 87% satisfaction rate for its intuitive design and seamless navigation.",
-  //     techStack: ["Next.Js", "Drizzle ORM", "Typescript", "Shadcn"],
-  //     image: "🛒",
-  //     demoUrl: "https://inventory-gndec.vercel.app/",
-  //     githubUrl: "#",
-  //     status: "In Progress",
-  //     date: "May 2025 - Present",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Spoco",
-  //     description:
-  //       "A sports venue booking app built with Flutter and Firebase, enabling users to discover facilities and make real-time reservations. Optimized with Provider state management for faster data updates, the app also includes club and event modules with member management, group chat, secure authentication, and live data synchronization.",
-  //     techStack: ["Flutter", "Firebase", "Dart"],
-  //     image: "🛒",
-  //     demoUrl:
-  //       "https://play.google.com/store/apps/details?id=com.auribises.spoco",
-  //     githubUrl: "#",
-  //     status: "Completed",
-  //     date: "August 2024 - November 2024",
-  //   },
-  //   {
-  //     id: 4,
-  //     title: "Achieve IT",
-  //     description:
-  //       "AchieveIt is a modern, intuitive task and project management application built with React Native and Expo. The app helps users organize their tasks and projects efficiently while providing a sleek, user-friendly interface with a beautiful dark theme design.",
-  //     techStack: ["React Native", "Expo", "Expo-Notification"],
-  //     image: "🛒",
-  //     demoUrl:
-  //       "https://github.com/mayank0304/AchieveIt/releases/tag/v1.0.0-AchieveIt",
-  //     githubUrl: "https://github.com/mayank0304/AchieveIt",
-  //     status: "Completed",
-  //     date: "July 2025",
-  //   },
-  // ];
 
   return (
     <div className="p-8 text-white">
@@ -79,7 +20,7 @@ const ProjectsTab = () => {
         <div className="p-3 mb-3">
           <SkillstackProject>
             <Image
-              src="/skillstack.png"
+              src="/projects/skillstack.png"
               width={460}
               height={260}
               alt="Skillstack"
@@ -91,9 +32,23 @@ const ProjectsTab = () => {
           </div>
         </div>
         <div className="p-3 mb-3">
+          <InventoryProject>
+            <Image
+              src="/projects/inventory.png"
+              width={460}
+              height={260}
+              alt="Inventory"
+              className="rounded-xl"
+            />
+          </InventoryProject>
+          <div className="text-xl text-center mt-2 font-bold">
+            Inventory
+          </div>
+        </div>
+        <div className="p-3 mb-3">
           <SpocoProject>
           <Image
-            src="/spoco.png"
+            src="/projects/spoco.png"
             width={460}
             height={260}
             alt="Skillstack"
@@ -105,7 +60,7 @@ const ProjectsTab = () => {
         <div className="p-3 mb-3">
           <AchieveProject>
             <Image
-            src="/achieve.png"
+            src="/projects/achieve.png"
             width={460}
             height={260}
             alt="Skillstack"
@@ -117,7 +72,7 @@ const ProjectsTab = () => {
       </div>
 
       {/* Call to Action */}
-      <div className="mt-12 text-center">
+      {/* <div className="mt-12 text-center">
         <div className="bg-[#1a1f29]/50 p-8 rounded-xl border border-white/10">
           <h3 className="text-2xl font-semibold mb-4 text-white">
             Interested in collaborating?
@@ -131,7 +86,7 @@ const ProjectsTab = () => {
             Get In Touch
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

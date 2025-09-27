@@ -11,38 +11,33 @@ import {
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "../ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
-export function AchieveProject({ children }: { children: React.ReactNode }) {
+export function InventoryProject({ children }: { children: React.ReactNode }) {
   const project = {
-    title: "Achieve IT",
+    title: "Inventory",
     description:
-      "AchieveIt is a modern, intuitive task and project management application built with React Native and Expo. The app helps users organize their tasks and projects efficiently while providing a sleek, user-friendly interface with a beautiful dark theme design.",
+      "An Inventory Management System for GNDEC's IT Department",
     techStack: [
-      "React Native",
-      "Expo",
-      "Expo-Notification",
-      "Async Storage"
+      "Next.Js",
+      "Shadcn",
+      "Tailwind",
+      "Drizzle ORM"
     ],
-    image: "/projects/achieve.png",
+    image: "/projects/inventory.png",
     demoUrl:
-      "https://github.com/mayank0304/AchieveIt/releases/tag/v1.0.0-AchieveIt",
-    githubUrl: "https://github.com/mayank0304/AchieveIt",
-    status: "Completed",
-    date: "July 2025",
+      "https://inventory-gndec.vercel.app",
+    githubUrl: "#",
+    status: "In Progress",
+    date: "May 2025 - Present",
   };
 
   const pic = [
-    "/achieve/a1.jpg",
-    "/achieve/a2.jpg",
-    "/achieve/a3.jpg",
-    "/achieve/a4.jpg",
-    "/achieve/a5.jpg",
-    "/achieve/a6.jpg",
+    "/skillstack/skillstack1.jpg",
+    "/skillstack/skillstack2.jpg",
+    "/skillstack/skillstack3.jpg",
+    "/skillstack/skillstack4.jpg",
+    "/skillstack/skillstack5.jpg",
   ];
 
   return (
@@ -93,17 +88,12 @@ export function AchieveProject({ children }: { children: React.ReactNode }) {
         <div className="mt-6 flex gap-4">
           <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
             <Button variant="default" className="flex items-center gap-2 border border-white/30">
-              <ExternalLink size={16} /> App APK
-            </Button>
-          </a>
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" className="flex items-center gap-2 border border-white/30">
-              <Github size={16} /> GitHub
+              <ExternalLink size={16} /> Live Website
             </Button>
           </a>
         </div>
 
-        <Carousel className="w-full">
+        {/* <Carousel className="w-full">
           <CarouselContent className="gap-0">
             {pic.map((p, index) => (
               <CarouselItem
@@ -121,7 +111,7 @@ export function AchieveProject({ children }: { children: React.ReactNode }) {
               </CarouselItem>
             ))}
           </CarouselContent>
-        </Carousel>
+        </Carousel> */}
       </DialogContent>
     </Dialog>
   );

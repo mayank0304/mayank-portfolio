@@ -27,7 +27,7 @@ export function SpocoProject({ children }: { children: React.ReactNode }) {
       "Firebase",
       "Dart"
     ],
-    image: "/spoco.png",
+    image: "/projects/spoco.png",
     demoUrl:
       "https://play.google.com/store/apps/details?id=com.auribises.spoco",
     githubUrl: "#",
@@ -91,13 +91,8 @@ export function SpocoProject({ children }: { children: React.ReactNode }) {
         {/* Links */}
         <div className="mt-6 flex gap-4">
           <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-            <Button variant="default" className="flex items-center gap-2">
-              <ExternalLink size={16} /> Live Demo
-            </Button>
-          </a>
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" className="flex items-center gap-2">
-              <Github size={16} /> GitHub
+            <Button variant="default" className="flex items-center gap-2 border border-white/30">
+              <ExternalLink size={16} /> Play Store
             </Button>
           </a>
         </div>

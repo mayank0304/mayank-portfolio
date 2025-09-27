@@ -11,14 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../ui/carousel";
-import { Card, CardContent } from "../ui/card";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
 export function SkillstackProject({ children }: { children: React.ReactNode }) {
   const project = {
@@ -33,7 +26,7 @@ export function SkillstackProject({ children }: { children: React.ReactNode }) {
       "Restful APIs",
       "Better Auth",
     ],
-    image: "/skillstack.png",
+    image: "/projects/skillstack.png",
     demoUrl:
       "https://github.com/mayank0304/skillstack-ai-apk/releases/tag/v1.0.0-Skillstack-AI",
     githubUrl: "#",
@@ -96,13 +89,8 @@ export function SkillstackProject({ children }: { children: React.ReactNode }) {
         {/* Links */}
         <div className="mt-6 flex gap-4">
           <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-            <Button variant="default" className="flex items-center gap-2">
-              <ExternalLink size={16} /> Live Demo
-            </Button>
-          </a>
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" className="flex items-center gap-2">
-              <Github size={16} /> GitHub
+            <Button variant="default" className="flex items-center gap-2 border border-white/30">
+              <ExternalLink size={16} /> App APK
             </Button>
           </a>
         </div>
