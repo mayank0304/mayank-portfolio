@@ -1,11 +1,7 @@
 import React from "react";
-import { Calendar, Cpu, GraduationCap, MapPin } from "lucide-react";
-import {
-  Marquee,
-  MarqueeContent,
-  MarqueeFade,
-  MarqueeItem,
-} from "../ui/shadcn-io/marquee";
+import { Calendar, Cpu, FileDown, GraduationCap, MapPin } from "lucide-react";
+import Image from "next/image";
+import TechSkill from "../resumeTab/techSkill";
 
 const ResumeTab = () => {
   return (
@@ -16,8 +12,22 @@ const ResumeTab = () => {
         <div className="w-20 h-1 bg-[#E0FA51] rounded-full"></div>
       </div>
 
+      <h2 className="font-semibold mb-6 text-white flex items-center gap-2">
+        <div className="w-10 h-10 bg-[#1a1f29] rounded-lg flex items-center justify-center">
+          <FileDown size={24} className="text-[#E0FA51]" />
+        </div>
+        <a
+          href="/resume.pdf"
+          download
+          className=" text-[#E0FA51] text-center py-2 px-8 border border-white/40 rounded-xl hover:border-[#E0FA51] font-medium"
+        >
+          Download Resume
+        </a>
+      </h2>
+
+
       <div className="mb-10">
-        <h2 className="text-2xl font-semibold mb-6 text-white flex items-center gap-2">
+        <h2 className="text-2xl font-semibold mb-4 text-white flex items-center gap-2">
           <div className="w-10 h-10 bg-[#1a1f29] rounded-lg flex items-center justify-center">
             <Calendar size={24} className="text-[#E0FA51]" />
           </div>
@@ -25,10 +35,10 @@ const ResumeTab = () => {
         </h2>
 
         <div className="">
-          <div className="relative">
+          <div className="relative px-4">
             {/* <div className="absolute w-4 h-4 bg-[#E0FA51] rounded-full -left-2 top-0"></div> */}
             <div className="p-1">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                 <h3 className="text-xl font-semibold text-white">
                   Software Engineer Intern
                 </h3>
@@ -37,7 +47,7 @@ const ResumeTab = () => {
                 </span>
               </div>
               <div className="flex items-center gap-2 mb-3 text-gray-400">
-                <MapPin size={14} />
+                <MapPin size={16} />
                 <span className="text-sm">
                   Auribises Technologies Private Limited
                 </span>
@@ -77,7 +87,6 @@ const ResumeTab = () => {
           Education
         </h2>
 
-        <div className="">
           <div className="">
             {/* <div className="absolute w-4 h-4 bg-[#E0FA51] rounded-full -left-2 top-0"></div> */}
             <div className="px-6">
@@ -112,53 +121,18 @@ const ResumeTab = () => {
               </div>
             </div>
           </div>
-        </div>
       </div>
 
-      {/* <div className="mb-10">
+      <div className="mb-10">
         <h2 className="text-2xl font-semibold mb-6 text-white flex items-center gap-2">
           <div className="w-10 h-10 bg-[#1a1f29] rounded-lg flex items-center justify-center">
             <Cpu size={28} className="text-[#E0FA51]" />
           </div>
           Technical Skills
         </h2>
-        <Marquee>
-            <MarqueeFade side="left" />
-            <MarqueeFade side="right" />
-            <MarqueeContent>
-              {[
-                { src: "/skills/dart.svg", name: "Dart" },
-                { src: "/skills/java.svg", name: "Java" },
-                { src: "/skills/javascript.svg", name: "JavaScript" },
-                { src: "/skills/typescript.svg", name: "TypeScript" },
-                { src: "/skills/firebase.svg", name: "Firebase" },
-                { src: "/skills/github.svg", name: "Github" },
-                { src: "/skills/docker.svg", name: "Docker" },
-                { src: "/skills/mongodb.svg", name: "Mongo DB" },
-                { src: "/skills/mysql.svg", name: "MySQL" },
-                { src: "/skills/postgresql.svg", name: "PostgreSQL" },
-                { src: "/skills/git.svg", name: "Git" },
-                { src: "/skills/html.svg", name: "HTML" },
-                { src: "/skills/css.svg", name: "CSS" },
-              ].map((skill, index) => (
-                <MarqueeItem
-                  key={index}
-                  className="relative h-32 w-32 flex items-center justify-center group"
-                >
-                  <img
-                    alt={skill.name}
-                    className="h-20 w-20 transition duration-300 group-hover:blur-sm"
-                    src={skill.src}
-                  />
 
-                  <span className="absolute text-lg font-semibold text-white opacity-0 group-hover:opacity-100 transition duration-300">
-                    {skill.name}
-                  </span>
-                </MarqueeItem>
-              ))}
-            </MarqueeContent>
-          </Marquee>
-      </div> */}
+       <TechSkill/>
+      </div>
     </div>
   );
 };
