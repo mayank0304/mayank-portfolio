@@ -1,6 +1,5 @@
 import React from "react";
 import { Calendar, Cpu, FileDown, GraduationCap, MapPin } from "lucide-react";
-import Image from "next/image";
 import TechSkill from "../resumeTab/techSkill";
 
 const ResumeTab = () => {
@@ -17,7 +16,7 @@ const ResumeTab = () => {
           <FileDown size={24} className="text-[#E0FA51]" />
         </div>
         <a
-          href="/resume.pdf"
+          href="/mayank_resume.pdf"
           download
           className=" text-[#E0FA51] text-center py-2 px-8 border border-white/40 rounded-xl hover:border-[#E0FA51] font-medium"
         >

@@ -1,10 +1,10 @@
 import React from "react";
-import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { SkillstackProject } from "../projectDialogs/skillstack";
 import { SpocoProject } from "../projectDialogs/spoco";
 import { AchieveProject } from "../projectDialogs/achieve";
 import { InventoryProject } from "../projectDialogs/inventory";
+import Intern from "../projectDialogs/intern";
 
 const ProjectsTab = () => {
 
@@ -70,6 +70,9 @@ const ProjectsTab = () => {
           <div className="text-xl text-center mt-2 font-bold">Achieve IT</div>
         </div>
       </div>
+
+      <Intern />
+
 
       {/* Call to Action */}
       {/* <div className="mt-12 text-center">
