@@ -17,9 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mayank Sharma | Software Developer Portfolio",
-  description:
-    "Full-stack software developer from Ludhiana, Punjab, India. Specializing in React, Next.js, Node.js, and modern web development. View my projects, experience, and get in touch.",
+  title: "Mayank | Software Developer Portfolio",
 };
 
 export default function RootLayout({
