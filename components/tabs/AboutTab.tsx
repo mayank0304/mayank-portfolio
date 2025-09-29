@@ -35,27 +35,26 @@ const AboutTab = () => {
 
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-4 text-white">What I Do</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-[#1a1f29]/50 p-6 rounded-xl border border-white/10">
-            <div className="w-12 h-12 bg-[#E0FA51]/20 rounded-lg flex items-center justify-center mb-4">
-              <span className="text-2xl">📱</span>
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Mobile Apps</h3>
-            <p className="text-gray-400 text-sm">
-              Professional development of applications for Android and ios.
-            </p>
-          </div>
+        <ul className="space-y-3 text-gray-300">
+          <li className="flex items-start gap-3">
+            <span className="text-[#E0FA51] mt-0.5">•</span>
+            <span>Build mobile apps with Flutter and React Native.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#E0FA51] mt-0.5">•</span>
+            <span>Create modern web apps with Next.js and React.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#E0FA51] mt-0.5">•</span>
+            <span>Work with APIs, Firebase, and SQL/NoSQL databases.</span>
+          </li>
+        </ul>
+      </div>
 
-          <div className="bg-[#1a1f29]/50 p-6 rounded-xl border border-white/10">
-            <div className="w-12 h-12 bg-[#E0FA51]/20 rounded-lg flex items-center justify-center mb-4">
-              <span className="text-2xl">🔧</span>
-            </div>
-            <h3 className="text-lg font-semibold mb-2">Web Development</h3>
-            <p className="text-gray-400 text-sm">
-              High-quality development of sites at the professional level.
-            </p>
-          </div>
-        </div>
+      <div className="rounded-lg border border-white/10 bg-[#1a1f29]/40 p-4 text-gray-300">
+        <p>
+          I&apos;m open to tech opportunities and internships in mobile and web development.
+        </p>
       </div>
     </div>
   );

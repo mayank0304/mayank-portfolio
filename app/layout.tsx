@@ -5,6 +5,7 @@ import Profile from "@/components/profile/profile";
 import TabbarMobile from "@/components/tabbar/tabbarMobile";
 import Tabbar from "@/components/tabbar/tabbar";
 import ProfileMobile from "@/components/profile/profileMobile";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +41,7 @@ export default function RootLayout({
             <div className="tab-content">{children}</div>
           </div>
           <TabbarMobile />
+            <Toaster position="top-center" richColors />
         </div>
       </body>
     </html>

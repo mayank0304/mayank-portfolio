@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 
@@ -11,24 +11,19 @@ const Profile = () => {
     <>
       <div className="hidden xl:block">
         <div className="bg-[#0D1117]/80 text-white max-w-sm mx-auto rounded-3xl shadow-lg backdrop-blur-md border border-white/10">
-          {/* Profile Section */}
           <div className="p-8 flex flex-col justify-center items-center">
-            {/* Avatar */}
             <div className="relative bg-tabbarMobile/90  rounded-3xl mb-6">
               <Image src="/avatar.png" alt="Profile" width={170} height={120} />
             </div>
 
-            {/* Name */}
             <div className="mb-2 text-2xl font-semibold">Mayank</div>
 
-            {/* Role */}
             <div className="bg-[#1a1f29] py-2 px-5 rounded-xl text-sm mb-6">
               Software Developer
             </div>
 
             <div className="w-full h-px bg-gray-700 mb-6"></div>
 
-            {/* Contact Info */}
             <div className="w-full flex flex-col gap-5">
               {/* Email */}
               <div className="flex items-center gap-3">
@@ -41,18 +36,6 @@ const Profile = () => {
                 </div>
               </div>
 
-              {/* Phone */}
-              {/* <div className="flex items-center gap-3">
-                <div className="bg-[#1a1f29] p-3 rounded-xl">
-                  <Phone size={18} color="#E0FA51" />
-                </div>
-                <div>
-                  <p className="text-xs text-gray-400">PHONE</p>
-                  <p className="text-sm">+91 7696071903</p>
-                </div>
-              </div> */}
-
-              {/* Location */}
               <div className="flex items-center gap-3">
                 <div className="bg-[#1a1f29] p-3 rounded-xl">
                   <MapPin size={18} color="#E0FA51" />
@@ -65,35 +48,22 @@ const Profile = () => {
             </div>
             <div className="w-full h-px bg-gray-700 my-6"></div>
 
-            {/* Download Resume Button */}
-            {/* <a
-              href="/resume.pdf"
-              download
-              className="w-full text-[#E0FA51] text-center py-2 border border-white/40 rounded-xl hover:border-[#E0FA51] font-medium"
-            >
-              Download Resume
-            </a>
-
-            <div className="w-full h-px bg-gray-700 my-3"></div> */}
-
-            {/* Social Icons */}
             <div className="flex gap-6 text-xl">
               <a
                 href="https://www.linkedin.com/in/mayank-sharma-62b47a24a/"
                 className="hover:text-blue-400"
+                target='blank'
               >
                 <FaLinkedin />
               </a>
               <a
                 href="https://github.com/mayank0304"
                 className="hover:text-gray-300"
+                target='blank'
               >
                 <FaGithub />
               </a>
-              <a href="#" className="hover:text-blue-500">
-                <FaX />
-              </a>
-              <a href="#" className="hover:text-blue-500">
+              <a href="https://www.instagram.com/_mayank0304/" className="hover:text-blue-500" target='blank'>
                 <FaInstagram />
               </a>
             </div>

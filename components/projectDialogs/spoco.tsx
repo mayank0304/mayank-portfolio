@@ -9,24 +9,16 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "../ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 
 export function SpocoProject({ children }: { children: React.ReactNode }) {
   const project = {
     title: "Spoco",
     description:
       "A sports venue booking app built with Flutter and Firebase, enabling users to discover facilities and make real-time reservations. Optimized with Provider state management for faster data updates, the app also includes club and event modules with member management, group chat, secure authentication, and live data synchronization.",
-    techStack: [
-      "Flutter",
-      "Firebase",
-      "Dart"
-    ],
+    techStack: ["Flutter", "Firebase", "Dart"],
     image: "/projects/spoco.png",
     demoUrl:
       "https://play.google.com/store/apps/details?id=com.auribises.spoco",
@@ -91,12 +83,14 @@ export function SpocoProject({ children }: { children: React.ReactNode }) {
         {/* Links */}
         <div className="mt-6 flex gap-4">
           <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-            <Button variant="default" className="flex items-center gap-2 border border-white/30">
+            <Button
+              variant="default"
+              className="flex items-center gap-2 border border-white/30"
+            >
               <ExternalLink size={16} /> Play Store
             </Button>
           </a>
         </div>
-
         <Carousel className="w-full">
           <CarouselContent className="gap-0">
             {pic.map((p, index) => (

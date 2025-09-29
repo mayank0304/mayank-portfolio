@@ -64,17 +64,6 @@ const ProfileMobile = () => {
                   </div>
                 </div>
 
-                {/* Phone */}
-                <div className="flex items-center gap-3">
-                  <div className="bg-[#1a1f29]/80 p-3 rounded-xl">
-                    <Phone size={18} color="#E0FA51" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-400">PHONE</p>
-                    <p className="text-sm">+91 7696071903</p>
-                  </div>
-                </div>
-
                 {/* Location */}
                 <div className="flex items-center gap-3 sm:col-span-2">
                   <div className="bg-[#1a1f29]/80 p-3 rounded-xl">
@@ -95,19 +84,18 @@ const ProfileMobile = () => {
                 <a
                   href="https://www.linkedin.com/in/mayank-sharma-62b47a24a/"
                   className="hover:text-blue-400"
+                  target='blank'
                 >
                   <FaLinkedin />
                 </a>
                 <a
                   href="https://github.com/mayank0304"
                   className="hover:text-gray-300"
+                  target='blank'
                 >
                   <FaGithub />
                 </a>
-                <a href="#" className="hover:text-blue-500">
-                  <FaX />
-                </a>
-                <a href="#" className="hover:text-pink-500">
+                <a href="https://www.instagram.com/_mayank0304/" className="hover:text-pink-500" target='blank'>
                   <FaInstagram />
                 </a>
               </div>
