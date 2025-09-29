@@ -51,7 +51,7 @@ const AboutTab = () => {
         </ul>
       </div>
 
-      <div className="rounded-lg border border-white/10 bg-[#1a1f29]/40 p-4 text-gray-300">
+      <div className="rounded-lg border text-justify border-white/10 bg-[#1a1f29]/40 p-4 text-gray-300">
         <p>
           I&apos;m open to tech opportunities and internships in mobile and web development.
         </p>

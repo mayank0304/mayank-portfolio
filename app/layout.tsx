@@ -36,7 +36,7 @@ export default function RootLayout({
             <Profile />
           </div>
           <ProfileMobile />
-          <div className="bg-[#0D1117]/80 text-white w-full xl:w-[80%]  rounded-2xl shadow-lg backdrop-blur-md border border-white/10">
+          <div className="bg-[#0D1117]/80 text-white w-full xl:w-[80%] rounded-2xl shadow-lg backdrop-blur-md border border-white/10">
             <Tabbar />
             <div className="tab-content">{children}</div>
           </div>

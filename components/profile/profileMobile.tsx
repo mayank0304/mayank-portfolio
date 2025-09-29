@@ -14,7 +14,7 @@ const ProfileMobile = () => {
           {/* Header Section */}
           <div className="relative flex items-center justify-between px-6 py-4">
             {/* Left: Avatar + Info */}
-            <div className="flex items-center gap-10">
+            <div className="flex items-center gap-4">
               <Image
                 src="/avatar.png"
                 alt="Profile"

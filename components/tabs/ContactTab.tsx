@@ -68,8 +68,8 @@ const ContactTab = () => {
       {/* Intro */}
       <div className="bg-[#1a1f29] py-6 px-8 rounded-xl mb-10">
         <p className="text-gray-300 leading-relaxed text-lg">
-          I&apos;m always interested in hearing about new opportunities,
-          creative projects, or just having a chat about technology. Feel free
+          I&apos;m always interested in new opportunities or
+          creative projects. Feel free
           to reach out if you&apos;d like to work together or discuss ideas!
         </p>
       </div>
