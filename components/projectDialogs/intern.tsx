@@ -42,12 +42,13 @@ const Intern = () => {
         {/* Internship Card */}
         {projects.map((p, index) => (
           <div key={index}>
-            <div className="bg-[#0a0f0d]/70 border border-[#E0FA51]/30 rounded-xl p-5 hover:border-[#E0FA51] transition group">
+            {/* Add h-full to this div to make the cards equal height */}
+            <div className="bg-[#0a0f0d]/70 border border-[#E0FA51]/30 rounded-xl p-5 hover:border-[#E0FA51] transition group h-full">
               <div className="flex justify-between items-start">
                 <h3 className="text-lg font-semibold text-white group-hover:text-[#E0FA51]">
                   {p.title}
                 </h3>
-                <a href={p.link} target="_blank">
+                <a href={p.link} target="_blank" rel="noopener noreferrer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-5 h-5 text-gray-400 hover:text-white transition"
@@ -58,7 +59,7 @@ const Intern = () => {
                   </svg>
                 </a>
               </div>
-              <p className="text-gray-400 text-sm mt-2">{p.desc}</p>
+              <p className="text-gray-400 text-sm mt-2 text-justify">{p.desc}</p>
               <div className="flex flex-wrap gap-2 mt-3">
                 {p.stack.map((s, index) => (
                   <div key={index}>

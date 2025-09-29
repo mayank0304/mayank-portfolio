@@ -1,14 +1,10 @@
 import React from "react";
 import {
   Award,
-  Calendar,
   Users,
   Trophy,
-  Medal,
-  Star,
   MapPin,
 } from "lucide-react";
-import { SkillstackProject } from "../projectDialogs/skillstack";
 import Image from "next/image";
 import { FlutterCert } from "../certificates/flutterCert";
 
@@ -43,7 +39,7 @@ const InterestsTab = () => {
               Core Team Member & Event Coordinator
             </h3>
             <div className="flex items-center gap-2 mb-3 text-gray-400">
-              <Calendar size={16} />
+              <MapPin size={16} />
               <span className="text-sm">
                 Causmic Club, GNDEC | August 2023 - Present
               </span>
@@ -79,29 +75,29 @@ const InterestsTab = () => {
           Hackathon Achievements
         </h2>
 
-        <div className="relative px-4">
-          {/* <div className="absolute w-4 h-4 bg-[#E0FA51] rounded-full -left-2 top-0"></div> */}
-          <div className="p-1">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-              <h3 className="text-xl font-semibold text-white">
-                Top 10 Finalist - Hackspire 1.0
-              </h3>
-            </div>
+        <div className="flex items-start gap-4 mx-8">
+          <div className="flex-1">
+            <h3 className="text-xl font-semibold text-white mb-2">
+              Top 10 Finalist - Hackspire 1.0
+            </h3>
             <div className="flex items-center gap-2 mb-3 text-gray-400">
               <MapPin size={16} />
-              <span className="text-sm">Thapar University</span>
+              <span className="text-sm">
+                Thapar University
+              </span>
             </div>
-            <ul className="text-gray-300 space-y-2 text-sm px-2 text-justify">
-              <li>
+            <div className="space-y-3 mx-3 text-justify">
+              <p className="text-gray-300 text-sm leading-relaxed">
                 Selected among the top 10 teams out of 150+ participants for
                 developing an innovative project using Spring Boot and AI-based
                 features within the given time frame. This achievement
                 demonstrates my ability to work under pressure and deliver
                 high-quality solutions in competitive environments.
-              </li>
-            </ul>
+              </p>
+            </div>
           </div>
         </div>
+
       </div>
 
       {/* Certificates & Awards */}
@@ -116,7 +112,7 @@ const InterestsTab = () => {
           <div className="p-3 mb-3">
             <FlutterCert>
               <Image
-                src="/projects/skillstack.png"
+                src="/certFlutter.png"
                 width={460}
                 height={260}
                 alt="Skillstack"
@@ -124,7 +120,7 @@ const InterestsTab = () => {
               />
             </FlutterCert>
             <div className="text-xl text-center mt-2 font-bold">
-              Skillstack AI
+              App Dev with Flutter
             </div>
           </div>
         </div>
