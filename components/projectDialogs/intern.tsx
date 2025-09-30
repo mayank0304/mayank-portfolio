@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Intern = () => {
   const projects = [
@@ -36,14 +37,21 @@ const Intern = () => {
       <h2 className="text-2xl text-center font-bold mb-1.5 text-[#E0FA51]">
         Other Projects
       </h2>
-      <h5 className="text-center mb-10">A selection of projects I contributed to during internships and college, showcasing hands-on experience and practical skills.</h5>
+      <h5 className="text-center mb-10">
+        A selection of projects I contributed to during internships and college,
+        showcasing hands-on experience and practical skills.
+      </h5>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {/* Internship Card */}
         {projects.map((p, index) => (
           <div key={index}>
             {/* Add h-full to this div to make the cards equal height */}
-            <div className="bg-[#0a0f0d]/70 border border-[#E0FA51]/30 rounded-xl p-5 hover:border-[#E0FA51] transition group h-full">
+            <motion.div
+              transition={{ duration: 0.2 }}
+              whileHover={{ scale: 1.01, y: -5 }}
+              className="bg-[#0a0f0d]/70 border border-[#E0FA51]/30 rounded-xl p-5 hover:border-[#E0FA51] transition group h-full"
+            >
               <div className="flex justify-between items-start">
                 <h3 className="text-lg font-semibold text-white group-hover:text-[#E0FA51]">
                   {p.title}
@@ -59,7 +67,9 @@ const Intern = () => {
                   </svg>
                 </a>
               </div>
-              <p className="text-gray-400 text-sm mt-2 text-justify">{p.desc}</p>
+              <p className="text-gray-400 text-sm mt-2 text-justify">
+                {p.desc}
+              </p>
               <div className="flex flex-wrap gap-2 mt-3">
                 {p.stack.map((s, index) => (
                   <div key={index}>
@@ -69,7 +79,7 @@ const Intern = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
