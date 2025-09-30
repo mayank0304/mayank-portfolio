@@ -50,6 +50,7 @@ const Intern = () => {
             <motion.div
               transition={{ duration: 0.2 }}
               whileHover={{ scale: 1.01, y: -5 }}
+              whileTap={{ y: -5 }}
               className="bg-[#0a0f0d]/70 border border-[#E0FA51]/30 rounded-xl p-5 hover:border-[#E0FA51] transition group h-full"
             >
               <div className="flex justify-between items-start">

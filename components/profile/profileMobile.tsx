@@ -2,9 +2,8 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { Mail, Phone, MapPin, ChevronDown, ChevronUp} from "lucide-react";
+import { Mail, MapPin, ChevronDown, ChevronUp} from "lucide-react";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import { FaX } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ProfileMobile = () => {
@@ -97,14 +96,14 @@ const ProfileMobile = () => {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ ease: "easeOut" }}
               >
                 {/* Divider */}
                 <motion.div 
                   className="w-full h-px bg-white/10 my-4"
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
+                  transition={{ duration: 0.2, delay: 0.1 }}
                 ></motion.div>
 
                 {/* Contact Info */}
@@ -114,7 +113,7 @@ const ProfileMobile = () => {
                     className="flex items-center gap-3"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.2 }}
+                    transition={{ delay: 0.2 }}
                     whileHover={{ scale: 1.02 }}
                   >
                     <div className="bg-[#1a1f29]/80 p-3 rounded-xl">
@@ -131,7 +130,7 @@ const ProfileMobile = () => {
                     className="flex items-center gap-3 sm:col-span-2"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: 0.3 }}
+                    transition={{ delay: 0.3 }}
                     whileHover={{ scale: 1.02 }}
                   >
                     <div className="bg-[#1a1f29]/80 p-3 rounded-xl">
@@ -149,7 +148,7 @@ const ProfileMobile = () => {
                   className="w-full h-px bg-white/10 my-6"
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
+                  transition={{ duration: 0.2, delay: 0.4 }}
                 ></motion.div>
 
                 {/* Social Icons */}
@@ -157,7 +156,7 @@ const ProfileMobile = () => {
                   className="flex gap-6 text-xl"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: 0.5 }}
+                  transition={{ delay: 0.5 }}
                 >
                   <motion.a
                     href="https://www.linkedin.com/in/mayank-sharma-62b47a24a/"

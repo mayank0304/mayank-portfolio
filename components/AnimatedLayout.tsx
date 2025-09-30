@@ -28,12 +28,31 @@ const AnimatedLayout = ({ children }: AnimatedLayoutProps) => {
       >
         <Profile />
       </motion.div>
-      <ProfileMobile />
+      {/* 1. Animate the Mobile Profile */}
       <motion.div
-        className="bg-[#0D1117]/80 text-white w-full xl:w-[80%] rounded-2xl shadow-lg backdrop-blur-md border border-white/10"
-        initial={{ opacity: 0, scale: 0.95, x: -50 }}
+        className="xl:hidden" // Ensure it only shows on smaller screens
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+      >
+        <ProfileMobile />
+      </motion.div>
+
+      <motion.div
+        className="bg-[#0D1117]/80 text-white w-full xl:w-[80%] rounded-2xl shadow-lg backdrop-blur-md border border-white/10 hidden xl:block" // Hidden by default, block on xl+
+        initial={{ opacity: 0, scale: 0.95, x: -50 }} // Desktop animation
         animate={{ opacity: 1, scale: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
+        transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+      >
+        <Tabbar />
+        <AnimatedContent>{children}</AnimatedContent>
+      </motion.div>
+
+      <motion.div
+        className="bg-[#0D1117]/80 text-white w-full xl:w-[80%] rounded-2xl shadow-lg backdrop-blur-md border border-white/10 block xl:hidden"
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
       >
         <Tabbar />
         <AnimatedContent>{children}</AnimatedContent>
