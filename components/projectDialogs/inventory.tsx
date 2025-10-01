@@ -9,9 +9,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
-import Image from "next/image";
-import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
+import { ExternalLink } from "lucide-react";
 
 export function InventoryProject({ children }: { children: React.ReactNode }) {
   const project = {
@@ -31,14 +29,6 @@ export function InventoryProject({ children }: { children: React.ReactNode }) {
     status: "In Progress",
     date: "May 2025 - Present",
   };
-
-  const pic = [
-    "/skillstack/skillstack1.jpg",
-    "/skillstack/skillstack2.jpg",
-    "/skillstack/skillstack3.jpg",
-    "/skillstack/skillstack4.jpg",
-    "/skillstack/skillstack5.jpg",
-  ];
 
   return (
     <Dialog>
