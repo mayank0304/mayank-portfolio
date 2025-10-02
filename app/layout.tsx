@@ -58,6 +58,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Mayank | Software Developer Portfolio</title>
+        <meta name="title" content="Mayank | Software Developer Portfolio" />
+        <meta
+          name="description"
+          content="Portfolio of Mayank - Software Developer specializing in Mobile application and web development. Explore projects, resume, and contact details."
+        />
+        <meta
+          name="keywords"
+          content="Mayank, Mayank portfolio, software developer, Mobile Developer, Application Developer, Flutter, React Native, Expo, web developer, frontend developer, Next.js, Node.js, Tailwind CSS, JavaScript, projects, resume, contact"
+        />
+        <meta name="author" content="Mayank" />
+        <meta name="application-name" content="Mayank Portfolio" />
+        <meta name="publisher" content="Mayank" />
+        <meta name="category" content="Technology" />
+
+        <link rel="icon" href="/favicon.png" sizes="any" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
