@@ -14,7 +14,41 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mayank | Software Developer Portfolio",
+  title: {
+    default: "Mayank | Software Developer Portfolio",
+    template: "%s | Mayank",
+  },
+  description:
+    "Portfolio of Mayank - Software Developer specializing in Mobile application and web development. Explore projects, resume, and contact details.",
+  keywords: [
+    "Mayank",
+    "Mayank portfolio",
+    "software developer",
+    "Mobile Developer",
+    "Application Developer",
+    "Flutter",
+    "React Native",
+    "Expo",
+    "web developer",
+    "frontend developer",
+    "Next.js",
+    "Node.js",
+    "Tailwind CSS",
+    "JavaScript",
+    "projects",
+    "resume",
+    "contact",
+  ],
+  authors: [{ name: "Mayank" }],
+  creator: "Mayank",
+  publisher: "Mayank",
+  applicationName: "Mayank Portfolio",
+  category: "Technology",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
