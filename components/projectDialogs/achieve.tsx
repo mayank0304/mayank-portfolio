@@ -108,9 +108,9 @@ export function AchieveProject({ children }: { children: React.ReactNode }) {
             {pic.map((p, index) => (
               <CarouselItem
                 key={index}
-                className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/4 xl:basis-1/6"
+                className="basis-6/11 sm:basis-3/11 md:basis-3/11 lg:basis-1/4 xl:basis-1/6"
               >
-                <div className="relative h-[480px]">
+                <div className="relative h-[360px] md:h-[480px]">
                   <Image
                     src={p}
                     alt={`Skillstack ${index + 1}`}

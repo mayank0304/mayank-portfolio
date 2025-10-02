@@ -83,7 +83,7 @@ const ProfileMobile = () => {
                 animate={{ rotate: open ? 180 : 0 }}
                 transition={{ duration: 0.3 }}
               >
-                {open ? <ChevronUp /> : <ChevronDown />}
+                <ChevronDown />
               </motion.div>
             </motion.button>
           </div>

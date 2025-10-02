@@ -35,11 +35,15 @@ export function SkillstackProject({ children }: { children: React.ReactNode }) {
   };
 
   const pic = [
-    "/skillstack/skillstack1.jpg",
-    "/skillstack/skillstack2.jpg",
-    "/skillstack/skillstack3.jpg",
-    "/skillstack/skillstack4.jpg",
-    "/skillstack/skillstack5.jpg",
+    "/skillstack/ssai1.jpg",
+    "/skillstack/ssai2.jpg",
+    "/skillstack/ssai3.jpg",
+    "/skillstack/ssai4.jpg",
+    "/skillstack/ssai5.jpg",
+    "/skillstack/ssai6.jpg",
+    "/skillstack/ssai7.jpg",
+    "/skillstack/ssai8.jpg",
+    "/skillstack/ssai9.jpg",
   ];
 
   return (
@@ -100,9 +104,9 @@ export function SkillstackProject({ children }: { children: React.ReactNode }) {
             {pic.map((p, index) => (
               <CarouselItem
                 key={index}
-                className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/4 xl:basis-1/6"
+                className="basis-6/11 sm:basis-3/11 md:basis-3/11 lg:basis-1/4 xl:basis-1/6"
               >
-                <div className="relative h-[480px]">
+                <div className="relative h-[360px] md:h-[480px]">
                   <Image
                     src={p}
                     alt={`Skillstack ${index + 1}`}
