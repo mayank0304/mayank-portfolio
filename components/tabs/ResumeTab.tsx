@@ -89,7 +89,7 @@ const ResumeTab = () => {
                   Software Engineer Intern
                 </h3>
                 <span className="text-[#E0FA51] text-sm font-medium">
-                  JAN 2025 - JULY 2025
+                  JAN 2025 - Present
                 </span>
               </motion.div>
               <motion.div 
